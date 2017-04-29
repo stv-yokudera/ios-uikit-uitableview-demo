@@ -67,6 +67,7 @@ UITableViewCellはUITableViewに表示するセルを管理するクラスです
 |-----------|------------|------------|
 | isSelected | 選択されているかどうか | cell.isSelected |
 | isHighlighted | ハイライト状態かどうか | cell.isHighlighted |
+| selectionStyle | セル選択時の色を設定 | cell.selectionStyle = .none |
 
 ## 主要メソッド
 
