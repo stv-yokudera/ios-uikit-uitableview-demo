@@ -14,6 +14,12 @@
 		960F33D61E6BF55900D04E4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960F33D41E6BF55900D04E4B /* LaunchScreen.storyboard */; };
 		960F33E11E6BF55900D04E4B /* ios_uikit_uitableview_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F33E01E6BF55900D04E4B /* ios_uikit_uitableview_demoTests.swift */; };
 		960F33ED1E6BF69500D04E4B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F33EB1E6BF69500D04E4B /* TableViewCell.swift */; };
+		B604F8241EB3AD3D009CA1FE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B604F8231EB3AD3D009CA1FE /* SecondViewController.swift */; };
+		B604F8261EB3AD7E009CA1FE /* SecondViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B604F8251EB3AD7E009CA1FE /* SecondViewController.storyboard */; };
+		B6EC77C41EB438A900EB8A47 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EC77C21EB438A900EB8A47 /* SecondTableViewCell.swift */; };
+		B6EC77C51EB438A900EB8A47 /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6EC77C31EB438A900EB8A47 /* SecondTableViewCell.xib */; };
+		B6EC77C81EB4486B00EB8A47 /* SecondTableViewCellItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EC77C71EB4486B00EB8A47 /* SecondTableViewCellItem.swift */; };
+		B6EC77CC1EB44AA300EB8A47 /* SecondTableViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EC77CB1EB44AA300EB8A47 /* SecondTableViewProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		960F33E01E6BF55900D04E4B /* ios_uikit_uitableview_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_uikit_uitableview_demoTests.swift; sourceTree = "<group>"; };
 		960F33E21E6BF55900D04E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		960F33EB1E6BF69500D04E4B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		B604F8231EB3AD3D009CA1FE /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B604F8251EB3AD7E009CA1FE /* SecondViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SecondViewController.storyboard; sourceTree = "<group>"; };
+		B6EC77C21EB438A900EB8A47 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		B6EC77C31EB438A900EB8A47 /* SecondTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		B6EC77C71EB4486B00EB8A47 /* SecondTableViewCellItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTableViewCellItem.swift; sourceTree = "<group>"; };
+		B6EC77CB1EB44AA300EB8A47 /* SecondTableViewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTableViewProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +73,9 @@
 		960F33BF1E6BF55900D04E4B = {
 			isa = PBXGroup;
 			children = (
+				960F33C91E6BF55900D04E4B /* Products */,
 				960F33CA1E6BF55900D04E4B /* ios-uikit-uitableview-demo */,
 				960F33DF1E6BF55900D04E4B /* ios-uikit-uitableview-demoTests */,
-				960F33C91E6BF55900D04E4B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +91,10 @@
 		960F33CA1E6BF55900D04E4B /* ios-uikit-uitableview-demo */ = {
 			isa = PBXGroup;
 			children = (
-				960F33CB1E6BF55900D04E4B /* AppDelegate.swift */,
-				960F33CD1E6BF55900D04E4B /* ViewController.swift */,
-				960F33EB1E6BF69500D04E4B /* TableViewCell.swift */,
-				960F33CF1E6BF55900D04E4B /* Main.storyboard */,
-				960F33D21E6BF55900D04E4B /* Assets.xcassets */,
-				960F33D41E6BF55900D04E4B /* LaunchScreen.storyboard */,
-				960F33D71E6BF55900D04E4B /* Info.plist */,
+				B604F81C1EB3ACC1009CA1FE /* Controllers */,
+				B6EC77C91EB44A5A00EB8A47 /* Models */,
+				B604F8221EB3AD08009CA1FE /* Others */,
+				B604F8201EB3ACEC009CA1FE /* Views */,
 			);
 			path = "ios-uikit-uitableview-demo";
 			sourceTree = "<group>";
@@ -93,10 +102,99 @@
 		960F33DF1E6BF55900D04E4B /* ios-uikit-uitableview-demoTests */ = {
 			isa = PBXGroup;
 			children = (
-				960F33E01E6BF55900D04E4B /* ios_uikit_uitableview_demoTests.swift */,
 				960F33E21E6BF55900D04E4B /* Info.plist */,
+				960F33E01E6BF55900D04E4B /* ios_uikit_uitableview_demoTests.swift */,
 			);
 			path = "ios-uikit-uitableview-demoTests";
+			sourceTree = "<group>";
+		};
+		B604F81C1EB3ACC1009CA1FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B604F81D1EB3ACCA009CA1FE /* Main */,
+				B604F81E1EB3ACCE009CA1FE /* Second */,
+				B604F81F1EB3ACDF009CA1FE /* Startup */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B604F81D1EB3ACCA009CA1FE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				960F33CF1E6BF55900D04E4B /* Main.storyboard */,
+				960F33CD1E6BF55900D04E4B /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B604F81E1EB3ACCE009CA1FE /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				B604F8251EB3AD7E009CA1FE /* SecondViewController.storyboard */,
+				B604F8231EB3AD3D009CA1FE /* SecondViewController.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		B604F81F1EB3ACDF009CA1FE /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				960F33D41E6BF55900D04E4B /* LaunchScreen.storyboard */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
+		B604F8201EB3ACEC009CA1FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B604F8211EB3ACF3009CA1FE /* Main */,
+				B6EC77C11EB4381900EB8A47 /* Second */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B604F8211EB3ACF3009CA1FE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				960F33EB1E6BF69500D04E4B /* TableViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B604F8221EB3AD08009CA1FE /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				960F33CB1E6BF55900D04E4B /* AppDelegate.swift */,
+				960F33D21E6BF55900D04E4B /* Assets.xcassets */,
+				960F33D71E6BF55900D04E4B /* Info.plist */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		B6EC77C11EB4381900EB8A47 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				B6EC77C21EB438A900EB8A47 /* SecondTableViewCell.swift */,
+				B6EC77C31EB438A900EB8A47 /* SecondTableViewCell.xib */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		B6EC77C91EB44A5A00EB8A47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6EC77CA1EB44A6700EB8A47 /* Second */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B6EC77CA1EB44A6700EB8A47 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				B6EC77C71EB4486B00EB8A47 /* SecondTableViewCellItem.swift */,
+				B6EC77CB1EB44AA300EB8A47 /* SecondTableViewProvider.swift */,
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				960F33D61E6BF55900D04E4B /* LaunchScreen.storyboard in Resources */,
+				B604F8261EB3AD7E009CA1FE /* SecondViewController.storyboard in Resources */,
+				B6EC77C51EB438A900EB8A47 /* SecondTableViewCell.xib in Resources */,
 				960F33D31E6BF55900D04E4B /* Assets.xcassets in Resources */,
 				960F33D11E6BF55900D04E4B /* Main.storyboard in Resources */,
 			);
@@ -204,8 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B604F8241EB3AD3D009CA1FE /* SecondViewController.swift in Sources */,
+				B6EC77C41EB438A900EB8A47 /* SecondTableViewCell.swift in Sources */,
 				960F33ED1E6BF69500D04E4B /* TableViewCell.swift in Sources */,
 				960F33CE1E6BF55900D04E4B /* ViewController.swift in Sources */,
+				B6EC77CC1EB44AA300EB8A47 /* SecondTableViewProvider.swift in Sources */,
+				B6EC77C81EB4486B00EB8A47 /* SecondTableViewCellItem.swift in Sources */,
 				960F33CC1E6BF55900D04E4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +339,7 @@
 				960F33D01E6BF55900D04E4B /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		960F33D41E6BF55900D04E4B /* LaunchScreen.storyboard */ = {
@@ -243,6 +348,7 @@
 				960F33D51E6BF55900D04E4B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -346,7 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = "ios-uikit-uitableview-demo/Info.plist";
+				INFOPLIST_FILE = "ios-uikit-uitableview-demo/Others/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-uikit-uitableview-demo";
@@ -360,7 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
-				INFOPLIST_FILE = "ios-uikit-uitableview-demo/Info.plist";
+				INFOPLIST_FILE = "ios-uikit-uitableview-demo/Others/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-uikit-uitableview-demo";
@@ -418,6 +524,7 @@
 				960F33E71E6BF55900D04E4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		960F33E81E6BF55900D04E4B /* Build configuration list for PBXNativeTarget "ios-uikit-uitableview-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +533,7 @@
 				960F33EA1E6BF55900D04E4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

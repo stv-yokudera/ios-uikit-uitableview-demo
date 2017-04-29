@@ -97,6 +97,10 @@ extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("セルをタップしました indexPath = \(indexPath)")
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        // 画面遷移
+        guard let secondVC = UIStoryboard(name: "SecondViewController", bundle: nil).instantiateInitialViewController() else { return }
+        self.navigationController?.pushViewController(secondVC, animated: true)
     }
     
     // セル表示直前に呼ばれる
